@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/im_portrait"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/tv_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/im_portrait"
+            android:layout_marginLeft="15dp"
+            android:layout_alignBottom ="@+id/im_portrait"
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            android:text="紫霄宫鸿钧老祖"/>
+        <TextView
+            android:id="@+id/tv_stamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignBottom ="@+id/im_portrait"
+            android:text="2016-10-08"/>
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_portrait"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:text="这特么就是爸爸评论有十五个字了,可是十五个字还是堵不住爸爸一秒五喷的嘴"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

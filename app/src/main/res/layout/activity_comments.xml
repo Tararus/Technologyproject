@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/red">
+        <ImageView
+            android:id="@+id/iv_back_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/biaoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+    <EditText
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="70dp"
+        android:background="@color/white"
+        android:hint="信手挥挥"
+        android:id="@+id/ed_commenter" />
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:text="发送"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
